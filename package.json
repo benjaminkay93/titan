@@ -1,0 +1,16 @@
+{
+  "name": "titan-projects",
+  "version": "1.0.0",
+  "repository": "git@github.com:benjaminkay93/titan.git",
+  "author": "Benjamin Kay <ben.kay01@hotmail.co.uk>",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "engines": {
+    "node": ">=12",
+    "yarn": "^1.22.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
