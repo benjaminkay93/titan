@@ -1,0 +1,11 @@
+{
+  "name": "@titan/example-project",
+  "version": "1.0.0",
+  "repository": "git@github.com:benjaminkay93/titan.git",
+  "author": "Benjamin Kay <ben.kay01@hotmail.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
