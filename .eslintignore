@@ -1,0 +1,5 @@
+.next
+.vscode
+bundles
+coverage
+node_modules
