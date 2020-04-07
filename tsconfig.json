@@ -13,14 +13,6 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "paths": {
-      "components/*": [
-        "components/*"
-      ],
-      "utilities/*": [
-        "utilities/*"
-      ]
-    },
     "preserveConstEnums": true,
     "removeComments": false,
     "skipLibCheck": true,
@@ -35,13 +27,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "**/*.spec.tsx",
-    "**/*.test.ts",
-    "**/*.test.tsx"
-  ],
   "include": [
     "**/*.ts",
     "**/*.tsx"
