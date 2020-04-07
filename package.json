@@ -13,6 +13,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "bin": {
+    "titan": "./packages/cli/index.js"
+  },
   "scripts": {
     "lint:styles": "stylelint '{components,pages,utilities}/**/*.tsx'",
     "lint:js": "eslint --ext .js,.ts,.tsx ./",

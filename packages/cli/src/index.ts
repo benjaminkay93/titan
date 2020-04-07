@@ -7,5 +7,3 @@ const commands = {
   dev,
   start
 }
-
-console.log(...args)
