@@ -16,10 +16,12 @@
   "bin": {
     "titan": "./packages/cli/index.js"
   },
+
   "scripts": {
-    "lint:styles": "stylelint '{components,pages,utilities}/**/*.tsx'",
+    "build": "run-p build:*",
+    "build:babel": "lerna run build --stream --parallel",
     "lint:js": "eslint --ext .js,.ts,.tsx ./",
-    "lint": "concurrently --names lint:js,lint:styles --prefix-colors \"bgBlue.white.bold,bgCyan.white.bold\" --kill-others-on-fail \"yarn lint:js\" \"yarn lint:styles\"",
+    "lint": "run-p lint:*",
     "jest": "jest --coverage"
   },
   "dependencies": {
@@ -41,6 +43,7 @@
     "eslint-plugin-standard": "4",
     "jest": "^25.2.7",
     "lerna": "^3.20.2",
+    "npm-run-all": "^4.1.5",
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3"
   }
