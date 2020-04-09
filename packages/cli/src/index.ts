@@ -8,11 +8,10 @@ const commands = {
   start
 }
 
-const cli = ([arg1]: string[]) => {
-  if (arg1 !== 'build' && arg1 !== 'dev' && arg1 !== 'start') throw new Error('Please provide an argument of \'build\', \'dev\' or \'start\'')
+const cli = ([arg1, arg2, arg3]: string[]) => {
+  if (arg3 !== 'build' && arg3 !== 'dev' && arg3 !== 'start') throw new Error('Please provide an argument of \'build\', \'dev\' or \'start\'')
 
-  console.log('Valid argument')
-  commands[arg1]()
+  commands[arg3]()
 }
 
 export default cli

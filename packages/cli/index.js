@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-console.log(process.argv)
+const cli = require('./dist/index')
+
+cli.default([...process.argv])

@@ -1,22 +1,12 @@
 const presets = [
+  '@babel/preset-env',
   '@babel/preset-typescript',
   '@babel/preset-react',
 ]
 
 const plugins = []
 
-const env = {
-  test: {
-    presets: [
-      [
-        { env: { modules: 'commonjs' } }
-      ]
-    ]
-  }
-}
-
 module.exports = {
   presets,
-  plugins,
-  env
+  plugins
 }
