@@ -19,12 +19,12 @@ module.exports = {
     'react/display-name': 0,
     'react/prop-types': 0,
   },
-  "env": {
+  env: {
     "jest": true,
   },
-  "settings": {
-    "react": {
-      "version": "16.8",
+  settings: {
+    react: {
+      version: "16.8",
     },
   },
 }
