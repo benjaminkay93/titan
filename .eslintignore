@@ -3,3 +3,4 @@
 bundles
 coverage
 node_modules
+**/dist/*

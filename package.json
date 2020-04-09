@@ -19,8 +19,10 @@
   "scripts": {
     "build": "run-p build:*",
     "build:babel": "lerna run build --stream --parallel",
-    "lint:js": "eslint --ext .js,.ts,.tsx ./",
+    "lint:ts": "eslint --ext .ts,.tsx ./packages",
     "lint": "run-p lint:*",
+    "test:lint": "yarn lint",
+    "test": "run-p test:*",
     "jest": "jest --coverage"
   },
   "dependencies": {
