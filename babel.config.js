@@ -1,4 +1,7 @@
-const presets = []
+const presets = [
+  '@babel/preset-typescript',
+  '@babel/preset-react',
+]
 
 const plugins = []
 

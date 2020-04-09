@@ -16,7 +16,6 @@
   "bin": {
     "titan": "./packages/cli/index.js"
   },
-
   "scripts": {
     "build": "run-p build:*",
     "build:babel": "lerna run build --stream --parallel",
@@ -29,6 +28,11 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
