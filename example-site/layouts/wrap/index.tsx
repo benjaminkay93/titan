@@ -1,5 +1,9 @@
 import React from 'react'
 
-const Wrap = ({ children }) => <>{children}</>
+interface WrapType {
+  children: React.ReactNode
+}
+
+const Wrap = ({ children }: WrapType) => <>{children}</>
 
 export default Wrap
