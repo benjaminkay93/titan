@@ -1,11 +1,11 @@
 {
-  "name": "@titan/handler",
+  "name": "@titan/pwa",
   "version": "1.0.0",
   "private": true,
   "sideEffects": false,
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   "scripts": {
-    "build": "echo 'handler'"
+    "build": "echo 'pwa'"
   }
 }
