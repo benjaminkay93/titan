@@ -8,10 +8,12 @@ const commands = {
   start
 }
 
-const cli = ([arg1, arg2, arg3]: string[]) => {
+const cli = ([, , arg3]: string[]) => {
+  const distPath = `${process.env.PWD}/dist`
+
   if (arg3 !== 'build' && arg3 !== 'dev' && arg3 !== 'start') throw new Error('Please provide an argument of \'build\', \'dev\' or \'start\'')
 
-  commands[arg3]()
+  commands[arg3]({ distPath })
 }
 
 export default cli

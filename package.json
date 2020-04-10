@@ -14,7 +14,7 @@
     "packages/*"
   ],
   "bin": {
-    "titan": "./packages/cli/index.js"
+    "titan": "./packages/cli/index.js $(pwd)"
   },
   "scripts": {
     "build": "run-p build:*",
