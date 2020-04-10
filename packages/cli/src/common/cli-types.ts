@@ -1,1 +1,3 @@
-export interface functionArguments {distPath: string}
+export interface CliFunction {
+  path: string
+}

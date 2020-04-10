@@ -1,7 +1,7 @@
 import { CliFunction } from '../common'
 
-const dev = ({ distPath }: CliFunction) => {
-  console.log(`Running dev from ${distPath}`)
+const dev = ({ path }: CliFunction) => {
+  console.log(`Running dev from ${path}`)
 }
 
 export default dev

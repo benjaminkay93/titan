@@ -1,7 +1,7 @@
 import { CliFunction } from '../common'
 
-const build = ({ distPath }: CliFunction) => {
-  console.log(distPath)
+const build = ({ path }: CliFunction) => {
+  console.log(path)
 }
 
 export default build
