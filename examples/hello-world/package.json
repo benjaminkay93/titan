@@ -7,5 +7,10 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "start": "titan start",
+    "dev": "titan dev",
+    "build": "titan build"
   }
 }
