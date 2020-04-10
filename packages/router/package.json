@@ -1,0 +1,12 @@
+{
+  "name": "@titan/router",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "peerDependencies": {
+    "react": "*",
+    "react-router": "*",
+    "react-router-dom": "*"
+  }
+}
