@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import App from './app'
 import Page from './page'
 
-const PWA = ({ paths }) => (
+const PWA = ({ paths }: {paths: string[]}) => (
   <App>
     <RouteProvider routes={paths}>
       <Switch>

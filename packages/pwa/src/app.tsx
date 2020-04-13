@@ -10,7 +10,7 @@ try {
   console.log("Could not import a default export from '/app'")
 }
 
-const PWAApp = ({ children }) => (
+const PWAApp = ({ children }: { children: React.ReactElement }) => (
   <App>
     {children}
   </App>
