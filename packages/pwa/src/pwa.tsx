@@ -1,5 +1,5 @@
 import React from 'react'
-import { RouteProvider } from '@bbc/web-framework-router'
+import { RouteProvider } from '@titan/router'
 import { Route, Switch } from 'react-router-dom'
 
 import App from './app'
