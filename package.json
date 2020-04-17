@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "lerna run --stream --parallel build",
-    "lint:ts": "eslint --ext .ts,.tsx ./packages",
+    "lint:ts": "eslint --ext .js,.ts,.tsx ./packages",
     "lint": "run-p lint:*",
     "test:lint": "yarn lint",
     "test": "run-p test:*",

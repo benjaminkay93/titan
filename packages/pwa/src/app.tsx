@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 
 let App = ({ children }: {children: React.ReactElement}) => (
   <>{children}</>
@@ -7,7 +7,7 @@ let App = ({ children }: {children: React.ReactElement}) => (
 try {
   App = require(`${APP_ROOT_PATH}/app`).default
 } catch (error) {
-  console.log("Could not import a default export from '/app'")
+  App = ({ children }: {children: React.ReactElement}) => <>{children}</>
 }
 
 const PWAApp = ({ children }: { children: React.ReactElement }) => (

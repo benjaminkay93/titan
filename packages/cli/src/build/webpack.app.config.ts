@@ -1,11 +1,13 @@
-import webpack from 'webpack'
+import webpack, { Configuration } from 'webpack'
 import { join } from 'path'
 
 const createConfig = ({
   mode = 'production',
   entryPath,
   distPath
-} = {}) => {
+}: {mode: 'production'
+  entryPath: string
+  distPath: string}): Configuration => {
   const prod = mode === 'production'
   const dev = !prod
 
