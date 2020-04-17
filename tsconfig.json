@@ -27,6 +27,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
+  "files": [
+    "./vendor.d.ts"
+  ],
   "include": [
     "**/*.ts",
     "**/*.tsx"

@@ -1,6 +1,7 @@
 import build from './build'
 import dev from './dev'
 import start from './start'
+import { join } from 'path'
 
 const commands = {
   build,
@@ -13,6 +14,7 @@ const cli = ([, , arg3]: string[]) => {
   const path = process.env.PWD
 
   global.APP_ROOT_PATH = path
+  global.APP_DIST_PATH = join(path, 'dist')
 
   if (arg3 !== 'build' && arg3 !== 'dev' && arg3 !== 'start') throw new Error('Please provide an argument of \'build\', \'dev\' or \'start\'')
 
