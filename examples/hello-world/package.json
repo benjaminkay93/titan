@@ -12,5 +12,8 @@
     "start": "titan start",
     "dev": "titan dev",
     "build": "titan build"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.13.0"
   }
 }

@@ -9,7 +9,7 @@ const commands = {
   start
 }
 
-const cli = ([, , arg3]: string[]) => {
+const cli = async ([, , arg3]: string[]) => {
   if (typeof process.env.PWD !== 'string') throw new Error('process.env.PWD has not been set.')
   const path = process.env.PWD
 
@@ -18,7 +18,7 @@ const cli = ([, , arg3]: string[]) => {
 
   if (arg3 !== 'build' && arg3 !== 'dev' && arg3 !== 'start') throw new Error('Please provide an argument of \'build\', \'dev\' or \'start\'')
 
-  commands[arg3]({ path })
+  await commands[arg3]({ path })
 }
 
 export default cli
