@@ -5,6 +5,10 @@
   "sideEffects": false,
   "main": "./index.js",
   "scripts": {
-    "build": "babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments"
+    "build": "babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+    "build:watch": "yarn build --watch"
+  },
+  "peerDependencies": {
+    "webpack": "*"
   }
 }

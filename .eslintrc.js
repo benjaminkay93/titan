@@ -22,6 +22,9 @@ module.exports = {
   env: {
     "jest": true,
   },
+  globals: {
+    APP_ROOT_PATH: true
+  },
   settings: {
     react: {
       version: "16.8",

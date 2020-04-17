@@ -1,7 +1,7 @@
 import React from 'react'
 import { hydrate } from 'react-dom'
-import App from './app'
+import PWA from './pwa'
 
-const app = <App/>
+const pwa = <PWA paths={['/']} />
 
-hydrate(app, document.getElementById('root'))
+hydrate(pwa, document.getElementById('root'))

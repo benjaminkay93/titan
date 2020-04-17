@@ -9,7 +9,7 @@ const PWA = ({ paths }: {paths: string[]}) => (
   <App>
     <RouteProvider routes={paths}>
       <Switch>
-        {paths.map(({ path }) => (
+        {paths.map((path) => (
           <Route
             exact
             key={path}
