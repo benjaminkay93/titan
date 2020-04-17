@@ -3,4 +3,4 @@ const handler = () => {
   return body
 }
 
-export handler
+export { handler }
